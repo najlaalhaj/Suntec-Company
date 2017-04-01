@@ -57,9 +57,8 @@ public class Designer extends Employee {
 			this.masterAllowance= seniorAllowance;
 		}
 		
-		//Implementing Employee.salary().
-		
-		public Double  salary(int experience,int numberOfWorkingHours,String qualification){
+
+		public Double salary(int experience,int numberOfWorkingHours,String qualification) {
 			Double  basicSalary;
 			switch(qualification){
 			
@@ -98,6 +97,7 @@ public class Designer extends Employee {
 			return salary;
 		}
 		
+
 		public Double bonus(){
 			this.bonus = (getSalary())*20/100;
 			return bonus;
